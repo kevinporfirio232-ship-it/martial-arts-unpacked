@@ -27,7 +27,8 @@ export const Route = createFileRoute("/")({
 });
 
 function Index() {
-  const [lead, ...rest] = posts;
+  const lead = posts[0]!;
+  const rest = posts.slice(1);
 
   return (
     <div className="min-h-screen">
