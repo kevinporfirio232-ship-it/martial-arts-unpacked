@@ -8,14 +8,15 @@ export function SiteHeader() {
         <Link to="/" className="flex items-center gap-3">
           <img
             src={logo.url}
-            alt="Guarda Aberta"
+            alt="Golpe Baixo"
             width={40}
             height={40}
             className="h-10 w-10 object-contain mix-blend-multiply"
           />
           <span className="font-display text-lg leading-none font-semibold tracking-tight">
-            Guarda Aberta
+            Golpe Baixo
           </span>
+
         </Link>
         <nav className="flex items-center gap-6 text-sm">
           <Link to="/" className="link-underline hidden sm:inline">
