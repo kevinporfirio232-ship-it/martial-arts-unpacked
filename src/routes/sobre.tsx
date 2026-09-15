@@ -36,14 +36,18 @@ function Sobre() {
         </h1>
         <div className="mt-8 space-y-5 text-lg leading-relaxed text-foreground/85">
           <p>
-            O Guarda Aberta nasceu de uma pergunta simples feita dentro de uma academia:
+            O Golpe Baixo nasceu de uma pergunta simples feita dentro de uma academia:
             por que as mulheres treinam há tanto tempo e continuam sendo tratadas como
             visitantes?
           </p>
           <p>
-            Publicamos ensaios, reportagens e guias práticos sobre machismo no judô, no
+            Publicamos ensaios, entrevistas e guias práticos sobre machismo no judô, no
             jiu-jitsu, no karatê, no muay thai e no boxe. Não somos contra as artes
             marciais — somos contra a parte delas que ninguém quer nomear.
+          </p>
+          <p>
+            As entrevistas publicadas até aqui são ficcionais: personagens construídas
+            pela redação a partir de relatos recorrentes, para ilustrar padrões do meio.
           </p>
           <p>
             Aceitamos relatos, dados de federações e pautas de qualquer lugar do Brasil.
@@ -53,11 +57,12 @@ function Sobre() {
         <div className="mt-10 rule-top pt-6">
           <p className="eyebrow text-muted-foreground">Contato</p>
           <a
-            href="mailto:pauta@guardaaberta.com.br"
+            href="mailto:pauta@golpebaixo.com.br"
             className="link-underline font-display text-2xl"
           >
-            pauta@guardaaberta.com.br
+            pauta@golpebaixo.com.br
           </a>
+
         </div>
       </main>
       <SiteFooter />
