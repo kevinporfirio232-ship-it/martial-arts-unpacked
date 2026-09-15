@@ -10,7 +10,8 @@ export const Route = createFileRoute("/posts/$slug")({
     return post;
   },
   head: ({ loaderData }) => {
-    const title = loaderData ? `${loaderData.title} — Guarda Aberta` : "Guarda Aberta";
+    const title = loaderData ? `${loaderData.title} — Golpe Baixo` : "Golpe Baixo";
+
     const description =
       loaderData?.excerpt ?? "Blog sobre machismo nas artes marciais.";
     return {
@@ -47,6 +48,34 @@ function PostPage() {
             </p>
           ))}
         </div>
+
+        {post.interview && (
+          <section className="rule-top mt-14 pt-8">
+            <p className="eyebrow text-primary">Entrevista</p>
+            <h2 className="mt-3 text-2xl leading-tight sm:text-3xl">
+              {post.interview.subject}
+            </h2>
+            <p className="mt-1 text-sm text-muted-foreground">{post.interview.role}</p>
+            <p className="mt-5 text-lg leading-relaxed text-foreground/85">
+              {post.interview.intro}
+            </p>
+            <dl className="mt-8 space-y-6">
+              {post.interview.qa.map((item, i) => (
+                <div key={i} className="border-l-2 border-primary pl-5">
+                  <dt className="font-display text-lg font-semibold">{item.q}</dt>
+                  <dd className="mt-2 text-lg leading-relaxed text-foreground/85">
+                    {item.a}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+            <p className="mt-6 text-sm text-muted-foreground">
+              Entrevista ficcional: personagem criada pela redação a partir de relatos
+              recorrentes no meio marcial.
+            </p>
+          </section>
+        )}
+
 
         <div className="rule-top mt-14 pt-8">
           <h2 className="text-xl">Continue lendo</h2>

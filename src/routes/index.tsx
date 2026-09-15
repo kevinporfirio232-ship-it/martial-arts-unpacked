@@ -7,13 +7,14 @@ import heroImg from "@/assets/hero-dojo.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Guarda Aberta — machismo nas artes marciais" },
+      { title: "Golpe Baixo — o machismo que ninguém marca no tatame" },
       {
         name: "description",
         content:
-          "Ensaios, reportagens e guias sobre machismo no judô, jiu-jitsu, karatê e muay thai. Jornalismo independente sobre gênero e poder no tatame.",
+          "Ensaios, entrevistas e guias sobre machismo no judô, jiu-jitsu, karatê e muay thai. Jornalismo independente sobre gênero e poder no tatame.",
       },
-      { property: "og:title", content: "Guarda Aberta — machismo nas artes marciais" },
+      { property: "og:title", content: "Golpe Baixo — o machismo que ninguém marca no tatame" },
+
       {
         property: "og:description",
         content:
