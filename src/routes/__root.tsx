@@ -77,13 +77,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Golpe Baixo — o machismo que ninguém marca no tatame" },
+      { title: "Guarda Aberta — o machismo que ninguém marca no tatame" },
       {
         name: "description",
         content:
           "Blog independente sobre machismo, gênero e poder nas artes marciais brasileiras.",
       },
-      { property: "og:title", content: "Golpe Baixo" },
+      { property: "og:title", content: "Guarda Aberta" },
       {
         property: "og:description",
         content: "Blog independente sobre machismo nas artes marciais.",

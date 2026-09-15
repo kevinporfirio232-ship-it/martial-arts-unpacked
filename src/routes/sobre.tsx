@@ -5,13 +5,13 @@ import { SiteFooter } from "@/components/SiteFooter";
 export const Route = createFileRoute("/sobre")({
   head: () => ({
     meta: [
-      { title: "Sobre o Golpe Baixo — blog sobre machismo nas artes marciais" },
+      { title: "Sobre o Guarda Aberta — blog sobre machismo nas artes marciais" },
       {
         name: "description",
         content:
-          "Quem faz o Golpe Baixo, por que investigamos o machismo nas artes marciais e como enviar uma pauta ou relato.",
+          "Quem faz o Guarda Aberta, por que investigamos o machismo nas artes marciais e como enviar uma pauta ou relato.",
       },
-      { property: "og:title", content: "Sobre o Golpe Baixo" },
+      { property: "og:title", content: "Sobre o Guarda Aberta" },
 
       {
         property: "og:description",
@@ -36,7 +36,7 @@ function Sobre() {
         </h1>
         <div className="mt-8 space-y-5 text-lg leading-relaxed text-foreground/85">
           <p>
-            O Golpe Baixo nasceu de uma pergunta simples feita dentro de uma academia:
+            O Guarda Aberta nasceu de uma pergunta simples feita dentro de uma academia:
             por que as mulheres treinam há tanto tempo e continuam sendo tratadas como
             visitantes?
           </p>
@@ -57,10 +57,10 @@ function Sobre() {
         <div className="mt-10 rule-top pt-6">
           <p className="eyebrow text-muted-foreground">Contato</p>
           <a
-            href="mailto:pauta@golpebaixo.com.br"
+            href="mailto:pauta@guardaaberta.com.br"
             className="link-underline font-display text-2xl"
           >
-            pauta@golpebaixo.com.br
+            pauta@guardaaberta.com.br
           </a>
 
         </div>
