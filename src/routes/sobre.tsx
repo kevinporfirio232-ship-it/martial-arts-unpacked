@@ -5,13 +5,14 @@ import { SiteFooter } from "@/components/SiteFooter";
 export const Route = createFileRoute("/sobre")({
   head: () => ({
     meta: [
-      { title: "Sobre o Guarda Aberta — blog sobre machismo nas artes marciais" },
+      { title: "Sobre o Golpe Baixo — blog sobre machismo nas artes marciais" },
       {
         name: "description",
         content:
-          "Quem faz o Guarda Aberta, por que investigamos o machismo nas artes marciais e como enviar uma pauta ou relato.",
+          "Quem faz o Golpe Baixo, por que investigamos o machismo nas artes marciais e como enviar uma pauta ou relato.",
       },
-      { property: "og:title", content: "Sobre o Guarda Aberta" },
+      { property: "og:title", content: "Sobre o Golpe Baixo" },
+
       {
         property: "og:description",
         content:
