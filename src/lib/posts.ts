@@ -20,7 +20,7 @@ export type Post = {
 export const posts: Post[] = [
   {
     slug: "o-tatame-nao-e-neutro",
-    title: "O tatame não é neutro",
+    title: "Quem manda no centro do tatame",
     excerpt:
       "Quem ocupa o centro do dojo, quem carrega o material, quem é corrigido em voz alta. A hierarquia invisível começa muito antes da primeira queda.",
     category: "Ensaio",

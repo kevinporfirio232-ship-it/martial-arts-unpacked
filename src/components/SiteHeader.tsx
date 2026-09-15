@@ -8,13 +8,13 @@ export function SiteHeader() {
         <Link to="/" className="flex items-center gap-3">
           <img
             src={logo}
-            alt="Golpe Baixo"
+            alt="Guarda Aberta"
             width={40}
             height={40}
             className="h-10 w-10 object-contain mix-blend-multiply"
           />
           <span className="font-display text-lg leading-none font-semibold tracking-tight">
-            Golpe Baixo
+            Guarda Aberta
           </span>
 
         </Link>

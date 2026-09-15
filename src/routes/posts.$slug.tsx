@@ -10,7 +10,7 @@ export const Route = createFileRoute("/posts/$slug")({
     return post;
   },
   head: ({ loaderData }) => {
-    const title = loaderData ? `${loaderData.title} — Golpe Baixo` : "Golpe Baixo";
+    const title = loaderData ? `${loaderData.title} — Guarda Aberta` : "Guarda Aberta";
 
     const description =
       loaderData?.excerpt ?? "Blog sobre machismo nas artes marciais.";
