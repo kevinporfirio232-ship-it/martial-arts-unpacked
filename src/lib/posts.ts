@@ -39,10 +39,10 @@ export const posts: Post[] = [
       "O centro não precisa ter dono. Quando o acesso ao treino intenso, à atenção do professor e às posições de liderança segue critérios claros, a hierarquia deixa de reproduzir gênero e volta a cumprir sua função: organizar o aprendizado.",
     ],
     interview: {
-      subject: "Entrevista com a G13 BJJ",
-      role: "Sobre inclusão e respeito nas artes marciais",
+      subject: "Entrevista com o professor Luciano",
+      role: "G13 BJJ — sobre inclusão e respeito nas artes marciais",
       intro:
-        "A equipe compartilha sua visão sobre o papel das academias no combate ao preconceito e sobre como acolher quem deseja começar a treinar.",
+        "O professor compartilha sua visão sobre o papel das academias no combate ao preconceito e sobre como acolher quem deseja começar a treinar.",
       qa: [
         {
           q: "O que as academias e os professores podem fazer ativamente no dia a dia para combater o machismo e criar um ambiente mais inclusivo e seguro para todos?",
@@ -79,6 +79,27 @@ export const posts: Post[] = [
       "Uma avaliação mais justa pode reunir domínio técnico, frequência, segurança na execução e desempenho em situações definidas. Se houver uma reprovação, a atleta precisa saber exatamente o que deve desenvolver e quando será reavaliada.",
       "Transparência não transforma faixa em prêmio automático. Ela protege a exigência técnica de preferências pessoais e permite que cada praticante construa um caminho possível até a próxima graduação.",
     ],
+    interview: {
+      subject: "Entrevista com o professor André",
+      role: "Professor de jiu-jitsu — sobre ensino e incentivo às mulheres",
+      intro:
+        "O professor conta como conduz as aulas sem distinção de gênero e explica como sua academia incentiva as mulheres a seguir até a faixa preta.",
+      qa: [
+        {
+          q: "Existe alguma diferença na forma como você aborda o ensino ou a correção de golpes com alunos do sexo masculino e feminino?",
+          a: "Nas minhas aulas, não fazemos distinção de gênero. Ensino todos com igualdade e muito respeito.",
+        },
+        {
+          q: "Na sua modalidade, há incentivo para que mulheres avancem para a faixa preta e se tornem instrutoras?",
+          a: "Na minha modalidade, que é o jiu-jitsu, incentivo todas as mulheres a praticarem nosso esporte. Temos mais de 40% de mulheres no nosso tatame, fazemos ações pontuais e temos até um horário específico para elas. Além disso, temos professoras e coaches na nossa grade de professores.",
+        },
+        {
+          q: "Qual conselho você daria para uma jovem que tem vontade de começar nas artes marciais, mas tem receio de entrar em um ambiente tradicionalmente dominado por homens?",
+          a: "Sabemos que a nossa arte marcial é predominantemente praticada por homens e temos uma crescente muito significativa de mulheres no tatame. O conselho que dou é que procurem um ambiente que tenha práticas de inclusão e respeito pelas mulheres, profissionais qualificados e com histórico de trabalho com mulheres. Lugar de mulher é no tatame e onde ela quiser estar.",
+        },
+      ],
+      note: "Entrevista enviada especialmente para esta publicação.",
+    },
   },
   {
     slug: "professora-nao-e-auxiliar",
