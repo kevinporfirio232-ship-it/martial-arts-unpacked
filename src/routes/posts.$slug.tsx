@@ -69,10 +69,11 @@ function PostPage() {
                 </div>
               ))}
             </dl>
-            <p className="mt-6 text-sm text-muted-foreground">
-              Entrevista ficcional: personagem criada pela redação a partir de relatos
-              recorrentes no meio marcial.
-            </p>
+            {post.interview.note && (
+              <p className="mt-6 text-sm text-muted-foreground">
+                {post.interview.note}
+              </p>
+            )}
           </section>
         )}
 

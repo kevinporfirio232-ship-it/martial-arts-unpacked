@@ -3,6 +3,7 @@ export type Interview = {
   role: string;
   intro: string;
   qa: { q: string; a: string }[];
+  note?: string;
 };
 
 export type Post = {
@@ -38,32 +39,25 @@ export const posts: Post[] = [
       "O centro não precisa ter dono. Quando o acesso ao treino intenso, à atenção do professor e às posições de liderança segue critérios claros, a hierarquia deixa de reproduzir gênero e volta a cumprir sua função: organizar o aprendizado.",
     ],
     interview: {
-      subject: "Dandara Vieira, 34",
-      role: "faixa marrom de jiu-jitsu, Recife (PE)",
+      subject: "Entrevista com a G13 BJJ",
+      role: "Sobre inclusão e respeito nas artes marciais",
       intro:
-        "Dandara treina há onze anos e diz ter passado os cinco primeiros convencida de que o problema era ela.",
+        "A equipe compartilha sua visão sobre o papel das academias no combate ao preconceito e sobre como acolher quem deseja começar a treinar.",
       qa: [
         {
-          q: "Quando você percebeu que o tatame tinha lados diferentes?",
-          a: "No dia em que pedi para treinar com um cara do meu peso e o professor disse 'vai ali com a menina nova, pega leve'. Eu não tinha pedido leve. Eu tinha pedido treino.",
+          q: "O que as academias e os professores podem fazer ativamente no dia a dia para combater o machismo e criar um ambiente mais inclusivo e seguro para todos?",
+          a: "O que nos cabe é orientar os alunos que venham a agir de forma contrária à filosofia e às diretrizes da academia. Hoje em dia, não cabe mais esse tipo de preconceito, tendo em vista as várias campeãs que temos no nosso esporte.",
         },
         {
-          q: "Isso muda o que você aprende?",
-          a: "Muda tudo. Técnica você só entende sob pressão. Se ninguém nunca te pressiona, você chega na competição descobrindo o básico na hora errada.",
+          q: "Você já presenciou ou ouviu relatos de situações em que alunas foram subestimadas na capacidade técnica ou na força física em comparação aos homens?",
+          a: "Nunca tive o desprazer de presenciar tal preconceito, tendo em vista que nossos mestres da G13 BJJ sempre pregaram que alunos e professores não devem ter esse tipo de preconceito.",
         },
         {
-          q: "O que você diria para uma faixa branca hoje?",
-          a: "Que exija o rolinho duro. E que anote quantas vezes precisou pedir. Esse número diz mais sobre a academia do que qualquer mural de campeões.",
-        },
-        {
-          q: "Algum professor conseguiu fazer diferente?",
-          a: "Sim. Um professor passou a montar as duplas por peso e objetivo do treino. Sem discurso, sem favor. Em poucas semanas eu estava treinando com todo mundo e evoluindo muito mais.",
-        },
-        {
-          q: "O que significa ocupar o centro hoje?",
-          a: "É poder errar, tentar de novo e ser corrigida como atleta. Não quero um lugar de homenagem. Quero o mesmo espaço de aprendizado.",
+          q: "Qual conselho você daria para uma jovem que tem vontade de começar nas artes marciais, mas tem receio de entrar em um ambiente tradicionalmente dominado por homens?",
+          a: "Procure uma boa escola, que tenha uma boa didática e um ambiente acolhedor, e continue evoluindo no esporte.",
         },
       ],
+      note: "Entrevista enviada especialmente para esta publicação.",
     },
   },
   {
@@ -71,7 +65,7 @@ export const posts: Post[] = [
     title: "A faixa preta custa mais caro para elas",
     excerpt:
       "Relatos de atletas descrevem intervalos maiores entre graduações femininas. Investigamos o que sustenta essa diferença.",
-    category: "Entrevista",
+    category: "Reportagem",
     date: "3 de agosto de 2026",
     readingTime: "13 min",
     author: "Redação",
@@ -85,41 +79,13 @@ export const posts: Post[] = [
       "Uma avaliação mais justa pode reunir domínio técnico, frequência, segurança na execução e desempenho em situações definidas. Se houver uma reprovação, a atleta precisa saber exatamente o que deve desenvolver e quando será reavaliada.",
       "Transparência não transforma faixa em prêmio automático. Ela protege a exigência técnica de preferências pessoais e permite que cada praticante construa um caminho possível até a próxima graduação.",
     ],
-    interview: {
-      subject: "Suellen Kawamoto, 41",
-      role: "faixa preta de judô, Londrina (PR)",
-      intro:
-        "Suellen levou sete anos para sair da marrom. Dois colegas da mesma turma levaram três.",
-      qa: [
-        {
-          q: "Você chegou a perguntar o porquê?",
-          a: "Perguntei três vezes. A resposta foi sempre uma variação de 'você ainda não está madura'. Ninguém soube me dizer o que faltava em técnica.",
-        },
-        {
-          q: "E quando finalmente veio a faixa?",
-          a: "Veio depois que duas alunas minhas pegaram medalha estadual. Ou seja: eu fui graduada pelo resultado das outras, não pelo meu.",
-        },
-        {
-          q: "O que resolveria isso?",
-          a: "Critério escrito na parede. Data, requisito, avaliador. Quando está no papel, a desculpa não cabe.",
-        },
-        {
-          q: "A espera afetou sua relação com o judô?",
-          a: "Quase parei. Eu treinava mais, competia mais e continuava ouvindo que precisava ter paciência. O pior não era esperar; era não saber o que estavam esperando de mim.",
-        },
-        {
-          q: "Como você avalia suas alunas hoje?",
-          a: "Entrego uma lista de critérios no começo do ciclo e faço devolutivas a cada três meses. Ninguém deveria descobrir seu desempenho apenas no dia da troca de faixa.",
-        },
-      ],
-    },
   },
   {
     slug: "professora-nao-e-auxiliar",
     title: "Professora não é auxiliar",
     excerpt:
       "Elas dão aula, montam plano de treino e levam equipe para competição. Nos cartazes, continuam aparecendo em letra menor.",
-    category: "Entrevista",
+    category: "Ensaio",
     date: "24 de julho de 2026",
     readingTime: "12 min",
     author: "Redação",
@@ -132,34 +98,6 @@ export const posts: Post[] = [
       "Reconhecimento começa pelo nome correto do cargo, por remuneração compatível e por autonomia. Uma professora precisa participar das decisões sobre calendário, graduação, orçamento e estratégia de competição — não apenas executar planos definidos por outros.",
       "Academias podem revisar contratos e materiais de divulgação, registrar quem criou cada programa e estabelecer o mesmo caminho de promoção para toda a equipe. Dar crédito não é gentileza: é tornar visível quem já sustenta o trabalho cotidiano.",
     ],
-    interview: {
-      subject: "Rita Boaventura, 38",
-      role: "instrutora de muay thai, Belo Horizonte (MG)",
-      intro:
-        "Rita comanda quatro turmas por dia e descobriu num cartaz que era 'apoio pedagógico'.",
-      qa: [
-        {
-          q: "Como foi ver o cartaz?",
-          a: "Eu ri, depois fiquei com raiva. Eu tinha montado o plano de treino da equipe inteira que estava naquela foto.",
-        },
-        {
-          q: "Você reclamou?",
-          a: "Reclamei. Trocaram para 'professora assistente'. Assistente de quem, até hoje ninguém explicou.",
-        },
-        {
-          q: "O que mudou depois?",
-          a: "Abri minha própria academia com uma regra: todo nome no cartaz vem com a função real e o mesmo tamanho de letra.",
-        },
-        {
-          q: "Qual trabalho costumava ficar invisível?",
-          a: "Eu acompanhava alunas que tinham medo de voltar depois de uma situação ruim, falava com famílias e adaptava treino para lesões. Tudo isso acontecia fora da aula e nunca entrava na conta.",
-        },
-        {
-          q: "O que você faz diferente na sua equipe?",
-          a: "Função, horário e pagamento ficam combinados por escrito. E quem criou uma aula ou preparou um atleta recebe crédito público pelo trabalho.",
-        },
-      ],
-    },
   },
   {
     slug: "guia-para-academias",
@@ -182,30 +120,6 @@ export const posts: Post[] = [
       "A revisão deve acontecer em ciclos. A cada três meses, direção, equipe e alunos podem avaliar denúncias, evasão, participação nas turmas e distribuição de graduações. Política que não é medida corre o risco de virar apenas texto na parede.",
       "Uma academia não muda porque se declara acolhedora. Ela muda quando suas regras funcionam também nos dias difíceis, inclusive quando a denúncia envolve um atleta premiado, um professor antigo ou um cliente importante.",
     ],
-    interview: {
-      subject: "Neide Barroso, 52",
-      role: "dona de academia de karatê, Santos (SP)",
-      intro:
-        "Neide aplicou nove das doze medidas em um ano e diz que perdeu dois alunos e ganhou trinta.",
-      qa: [
-        {
-          q: "Qual medida gerou mais resistência?",
-          a: "A rotação de parceiros. Os veteranos adoravam escolher com quem treinavam. Escolher parceiro é escolher não perder.",
-        },
-        {
-          q: "Valeu a pena?",
-          a: "As duas pessoas que saíram eram exatamente as que faziam as alunas desistirem. Foi o melhor prejuízo da minha vida.",
-        },
-        {
-          q: "Como você soube que as medidas funcionaram?",
-          a: "Passei a acompanhar permanência, faltas e desistências. Antes eu dizia que as portas estavam abertas; depois comecei a medir quem conseguia ficar.",
-        },
-        {
-          q: "Qual foi o primeiro resultado visível?",
-          a: "As alunas começaram a ocupar os horários da noite e a treinar com faixas mais altas. Quando o ambiente ficou previsível, elas pararam de gastar energia tentando se proteger.",
-        },
-      ],
-    },
   },
   {
     slug: "linguagem-de-corredor",
@@ -226,29 +140,6 @@ export const posts: Post[] = [
       "A correção pode ser objetiva. Em vez de usar gênero como medida de competência, o professor nomeia o problema técnico: base alta, guarda aberta, distância errada. A aula fica mais precisa e deixa de depender da humilhação para produzir intensidade.",
       "Não basta proibir uma lista de expressões. A equipe precisa construir repertório para incentivar, corrigir e brincar sem transformar uma identidade em ofensa. O objetivo não é um ginásio silencioso, mas um espaço em que ninguém seja diminuído para que outra pessoa se sinta forte.",
     ],
-    interview: {
-      subject: "Joana Ferreyra, 27",
-      role: "atleta de boxe, Porto Alegre (RS)",
-      intro: "Joana começou a anotar num caderno as frases que ouvia no ginásio.",
-      qa: [
-        {
-          q: "Por que anotar?",
-          a: "Porque isoladamente cada frase é 'só brincadeira'. Juntas, viram um manual de como não me levar a sério.",
-        },
-        {
-          q: "Você mostrou para alguém?",
-          a: "Mostrei para o técnico. Ele leu quieto e no treino seguinte falou com o grupo. Não virou paraíso, mas o corredor ficou mais silencioso.",
-        },
-        {
-          q: "O silêncio foi suficiente?",
-          a: "Foi um começo, não o objetivo. Depois precisávamos aprender outras formas de cobrar intensidade. Sem isso, as pessoas só ficam com medo de falar e continuam pensando igual.",
-        },
-        {
-          q: "Que frase você gostaria de ouvir no treino?",
-          a: "Quero ouvir o nome do erro e como corrigir. 'Fecha a guarda, gira o quadril, controla a distância'. Técnica é mais útil do que qualquer piada.",
-        },
-      ],
-    },
   },
 ];
 
