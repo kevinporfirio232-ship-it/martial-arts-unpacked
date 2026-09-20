@@ -119,6 +119,27 @@ export const posts: Post[] = [
       "Reconhecimento começa pelo nome correto do cargo, por remuneração compatível e por autonomia. Uma professora precisa participar das decisões sobre calendário, graduação, orçamento e estratégia de competição — não apenas executar planos definidos por outros.",
       "Academias podem revisar contratos e materiais de divulgação, registrar quem criou cada programa e estabelecer o mesmo caminho de promoção para toda a equipe. Dar crédito não é gentileza: é tornar visível quem já sustenta o trabalho cotidiano.",
     ],
+    interview: {
+      subject: "Entrevista com Marta Nogueira",
+      role: "Professora de judô — sobre reconhecimento e crédito no trabalho feminino",
+      intro:
+        "A professora conta como é sustentar treinos e equipes sem que seu nome apareça no lugar que o trabalho ocuparia.",
+      qa: [
+        {
+          q: "Na sua trajetória, você já sentiu que seu trabalho foi tratado como auxiliar, mesmo quando você assumia funções de professora?",
+          a: "Sim. Durante anos montei o plano de treino, acompanhei os atletas em competição e resolvi os problemas do dia a dia. Quando saía resultado, o nome que aparecia era o do meu colega. O meu trabalho era tratado como ajuda, o dele como comando — exatamente a mesma função, com pesos diferentes.",
+        },
+        {
+          q: "O que mudaria concretamente a rotina das professoras nas academias?",
+          a: "Três coisas simples: contrato com cargo e salário corretos, crédito registrado em quem criou cada programa e participação nas decisões — calendário, graduação, orçamento. Não é privilégio, é descrever o trabalho que já existe.",
+        },
+        {
+          q: "Qual conselho você daria para uma mulher que quer se tornar professora?",
+          a: "Registre o seu trabalho. Guarde os planos de treino que você criou, os resultados das suas equipes, as turmas que você conduziu. Quando chegar a hora de negociar cargo e salário, o histórico escrito é o que impede que a sua competência seja tratada como favo.",
+        },
+      ],
+      note: "Entrevista fictícia, criada para ilustrar o debate.",
+    },
   },
   {
     slug: "guia-para-academias",
@@ -141,6 +162,27 @@ export const posts: Post[] = [
       "A revisão deve acontecer em ciclos. A cada três meses, direção, equipe e alunos podem avaliar denúncias, evasão, participação nas turmas e distribuição de graduações. Política que não é medida corre o risco de virar apenas texto na parede.",
       "Uma academia não muda porque se declara acolhedora. Ela muda quando suas regras funcionam também nos dias difíceis, inclusive quando a denúncia envolve um atleta premiado, um professor antigo ou um cliente importante.",
     ],
+    interview: {
+      subject: "Entrevista com Fernanda Lousada",
+      role: "Responsável por uma academia de karatê — sobre colocar protocolos em prática",
+      intro:
+        "A responsável pela academia explica quais medidas do guia implementou primeiro e o que aprendeu ao aplicá-las.",
+      qa: [
+        {
+          q: "Quais dessas medidas a sua academia implementou primeiro e como foi o processo?",
+          a: "Começamos pelo canal de denúncia com responsável nomeado e pela rotação de parceiros no sparring. O canal levou duas semanas para ser ajustado: definimos quem recebe o relato, o prazo de resposta e a proteção contra retaliação. A rotação foi mais simples do que imaginávamos — os alunos até gostaram de treinar com pessoas diferentes.",
+        },
+        {
+          q: "Houve resistência de alunos antigos?",
+          a: "Houve, principalmente com as correções de linguagem. Alguns achavam que era exagero. A regra que adotamos foi corrigir na hora, de forma curta e direta, sem transformar em espetáculo. Em poucos meses, o próprio grupo passou a puxar a correção quando alguém esquecia.",
+        },
+        {
+          q: "O que você diria para quem acha que essas medidas são burocracia?",
+          a: "Que protocolo é o que protege todo mundo no dia difícil, inclusive a academia. Quando a denúncia envolve um atleta premiado ou um professor antigo, não é o bom humor do professor que resolve — é o procedimento escrito. Sem isso, o discurso de acolhimento é só texto na parede.",
+        },
+      ],
+      note: "Entrevista fictícia, criada para ilustrar o debate.",
+    },
   },
   {
     slug: "linguagem-de-corredor",
@@ -161,6 +203,27 @@ export const posts: Post[] = [
       "A correção pode ser objetiva. Em vez de usar gênero como medida de competência, o professor nomeia o problema técnico: base alta, guarda aberta, distância errada. A aula fica mais precisa e deixa de depender da humilhação para produzir intensidade.",
       "Não basta proibir uma lista de expressões. A equipe precisa construir repertório para incentivar, corrigir e brincar sem transformar uma identidade em ofensa. O objetivo não é um ginásio silencioso, mas um espaço em que ninguém seja diminuído para que outra pessoa se sinta forte.",
     ],
+    interview: {
+      subject: "Entrevista com Camila Duarte",
+      role: "Atleta de boxe — sobre o vocabulário que atravessa o treino",
+      intro:
+        "A atleta conta quais frases ouviu ao longo dos anos, como elas mudaram sua forma de treinar e o que um professor pode fazer no momento em que a frase é dita.",
+      qa: [
+        {
+          q: "Você lembra de frases ouvidas em treino que marcaram a forma como você era vista no ginásio?",
+          a: "Lembro de uma em especial: 'não deixa ela te bater', gritada para o meu parceiro de treino. Eu estava ali, ouvindo. A mensagem era clara — perder para mim era uma vergonha maior do que errar a defesa. A partir daquele dia, quando eu vencia um sparring, o clima mudava.",
+        },
+        {
+          q: "Isso mudou a sua forma de treinar?",
+          a: "Mudou. Eu passava metade do treino administrando a reação do parceiro: se eu aplicava bem o golpe, tinha que suavizar para não gerar hostilidade. Reduzi a intensidade em algumas duplas e evitei outras em que eu deveria estar aprendendo. Perdi treino por causa de uma frase.",
+        },
+        {
+          q: "O que um professor pode fazer no momento em que a frase é dita?",
+          a: "Corrigir ali, na hora, sem esperar a aula acabar. E nomear o problema técnico em vez do gênero: distância errada, guarda aberta, base alta. Quando a correção é técnica, todos aprendem mais e ninguém precisa ser diminuído para a aula ter intensidade.",
+        },
+      ],
+      note: "Entrevista fictícia, criada para ilustrar o debate.",
+    },
   },
 ];
 
