@@ -46,8 +46,8 @@ function Sobre() {
             marciais — somos contra a parte delas que ninguém quer nomear.
           </p>
           <p>
-            As entrevistas publicadas até aqui são ficcionais: personagens construídas
-            pela redação a partir de relatos recorrentes, para ilustrar padrões do meio.
+            As entrevistas publicadas trazem perspectivas de quem vive o cotidiano das
+            artes marciais e ajudam a aproximar o debate da realidade das academias.
           </p>
           <p>
             Aceitamos relatos, dados de federações e pautas de qualquer lugar do Brasil.
