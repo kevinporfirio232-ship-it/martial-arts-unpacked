@@ -6,3 +6,5 @@
 - [x] Verificar as páginas em computador e celular.
 - [x] Confirmar que o site está sem erros.
 - [x] Criar novas entrevistas ficcionais nos mesmos modelos para os três artigos sem entrevista.
+- [x] Explicitar objetivo, justificativa, metodologia e resultados esperados na página inicial.
+- [x] Adicionar uma seção de fontes e referências na página inicial.
