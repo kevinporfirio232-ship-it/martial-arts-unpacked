@@ -28,8 +28,10 @@ export const Route = createFileRoute("/")({
 });
 
 function Index() {
-  const lead = posts[0]!;
+  const lead = posts[0];
   const rest = posts.slice(1);
+
+  if (!lead) return null;
 
   return (
     <div className="min-h-screen">
@@ -67,7 +69,59 @@ function Index() {
           </div>
         </section>
 
-        <section className="mx-auto max-w-6xl px-6">
+        <section className="border-y border-border bg-secondary" aria-labelledby="projeto-title">
+          <div className="mx-auto max-w-6xl px-6 py-16 sm:py-20">
+            <div className="grid gap-8 lg:grid-cols-[0.72fr_1.28fr] lg:gap-16">
+              <div>
+                <p className="eyebrow text-primary">Sobre o projeto</p>
+                <h2 id="projeto-title" className="mt-4 text-3xl leading-tight sm:text-4xl">
+                  Por que abrimos esta guarda
+                </h2>
+                <p className="mt-5 max-w-md leading-relaxed text-muted-foreground">
+                  O Guarda Aberta é um projeto editorial dedicado a investigar como o machismo
+                  aparece no ensino, na convivência e nas oportunidades dentro das artes marciais.
+                </p>
+              </div>
+
+              <dl className="grid gap-x-10 gap-y-9 sm:grid-cols-2">
+                <div className="rule-top pt-5">
+                  <dt className="eyebrow text-primary">01 · Objetivo</dt>
+                  <dd className="mt-3 leading-relaxed">
+                    Informar e estimular o debate sobre desigualdades de gênero nas academias,
+                    dando visibilidade a experiências que muitas vezes são tratadas como casos
+                    isolados.
+                  </dd>
+                </div>
+                <div className="rule-top pt-5">
+                  <dt className="eyebrow text-primary">02 · Justificativa</dt>
+                  <dd className="mt-3 leading-relaxed">
+                    Mulheres ainda enfrentam desconfiança técnica, menor reconhecimento e ambientes
+                    pouco seguros. Discutir essas práticas ajuda a identificar problemas que a rotina
+                    do tatame pode normalizar.
+                  </dd>
+                </div>
+                <div className="rule-top pt-5">
+                  <dt className="eyebrow text-primary">03 · Metodologia</dt>
+                  <dd className="mt-3 leading-relaxed">
+                    Os textos combinam pesquisa bibliográfica e documental, análise crítica e
+                    entrevistas. Depoimentos reais são creditados; entrevistas criadas para ilustrar
+                    o debate são identificadas como ficcionais.
+                  </dd>
+                </div>
+                <div className="rule-top pt-5">
+                  <dt className="eyebrow text-primary">04 · Resultados esperados</dt>
+                  <dd className="mt-3 leading-relaxed">
+                    Ampliar a percepção sobre o machismo no esporte e incentivar alunos, professores
+                    e academias a adotarem relações mais respeitosas, critérios transparentes e
+                    práticas inclusivas.
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </section>
+
+        <section className="mx-auto max-w-6xl px-6 pt-16">
           <div className="rule-top flex items-baseline justify-between py-5">
             <h2 className="text-2xl">Publicações recentes</h2>
             <span className="eyebrow text-muted-foreground">{rest.length} textos</span>
@@ -99,6 +153,96 @@ function Index() {
               </li>
             ))}
           </ul>
+        </section>
+
+        <section className="mx-auto mt-20 max-w-6xl px-6" aria-labelledby="fontes-title">
+          <div className="rule-top grid gap-8 py-10 lg:grid-cols-[0.72fr_1.28fr] lg:gap-16">
+            <div>
+              <p className="eyebrow text-primary">Pesquisa</p>
+              <h2 id="fontes-title" className="mt-4 text-3xl leading-tight">
+                Fontes e referências
+              </h2>
+              <p className="mt-4 max-w-md leading-relaxed text-muted-foreground">
+                A apuração parte de estudos, normas e iniciativas públicas sobre gênero, esporte,
+                proteção e participação feminina.
+              </p>
+            </div>
+
+            <ul className="divide-y divide-border border-y border-border">
+              <li>
+                <a
+                  href="https://www.unwomen.org/en/articles/in-focus/women-and-girls-in-sport"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group flex items-start justify-between gap-6 py-5"
+                >
+                  <span>
+                    <strong className="block font-semibold">ONU Mulheres</strong>
+                    <span className="mt-1 block text-sm text-muted-foreground">
+                      Esporte para a igualdade de gênero
+                    </span>
+                  </span>
+                  <span aria-hidden="true" className="text-primary transition-transform group-hover:translate-x-1">
+                    ↗
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.unesco.org/en/sport-and-anti-doping/women-and-sport"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group flex items-start justify-between gap-6 py-5"
+                >
+                  <span>
+                    <strong className="block font-semibold">UNESCO</strong>
+                    <span className="mt-1 block text-sm text-muted-foreground">
+                      Igualdade de gênero por meio do esporte
+                    </span>
+                  </span>
+                  <span aria-hidden="true" className="text-primary transition-transform group-hover:translate-x-1">
+                    ↗
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.olympics.com/ioc/gender-equality"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group flex items-start justify-between gap-6 py-5"
+                >
+                  <span>
+                    <strong className="block font-semibold">Comitê Olímpico Internacional</strong>
+                    <span className="mt-1 block text-sm text-muted-foreground">
+                      Igualdade, diversidade e inclusão no esporte
+                    </span>
+                  </span>
+                  <span aria-hidden="true" className="text-primary transition-transform group-hover:translate-x-1">
+                    ↗
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14597.htm"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group flex items-start justify-between gap-6 py-5"
+                >
+                  <span>
+                    <strong className="block font-semibold">Lei Geral do Esporte</strong>
+                    <span className="mt-1 block text-sm text-muted-foreground">
+                      Lei nº 14.597/2023 — direitos, integridade e combate à discriminação
+                    </span>
+                  </span>
+                  <span aria-hidden="true" className="text-primary transition-transform group-hover:translate-x-1">
+                    ↗
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </section>
 
         <section id="newsletter" className="mx-auto mt-20 max-w-6xl px-6">
