@@ -171,7 +171,7 @@ function Index() {
             <ul className="divide-y divide-border border-y border-border">
               <li>
                 <a
-                  href="https://www.unwomen.org/en/news-stories/feature-story/2022/12/sports-for-generation-equality"
+                  href="https://www.unwomen.org/en/articles/in-focus/women-and-girls-in-sport"
                   target="_blank"
                   rel="noreferrer"
                   className="group flex items-start justify-between gap-6 py-5"
@@ -189,7 +189,7 @@ function Index() {
               </li>
               <li>
                 <a
-                  href="https://www.unesco.org/en/sport-and-anti-doping/gender-equality"
+                  href="https://www.unesco.org/en/sport-and-anti-doping/women-and-sport"
                   target="_blank"
                   rel="noreferrer"
                   className="group flex items-start justify-between gap-6 py-5"
@@ -207,7 +207,7 @@ function Index() {
               </li>
               <li>
                 <a
-                  href="https://olympics.com/ioc/gender-equality"
+                  href="https://www.olympics.com/ioc/gender-equality"
                   target="_blank"
                   rel="noreferrer"
                   className="group flex items-start justify-between gap-6 py-5"
