@@ -27,7 +27,87 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
+const referenceGroups = [
+  {
+    title: "Autores especializados em artes marciais",
+    items: [
+      {
+        href: "https://loicwacquant.org/body-and-soul-notebooks-of-an-apprentice-boxer/",
+        title: "Loïc Wacquant — Body & Soul: Notebooks of an Apprentice Boxer",
+        detail:
+          "Etnografia clássica sobre corpo, masculinidade e aprendizado numa academia de boxe.",
+      },
+      {
+        href: "https://link.springer.com/book/10.1057/9781137439369",
+        title: "Alex Channon e Christopher R. Matthews (orgs.) — Global Perspectives on Women in Combat Sports",
+        detail:
+          "Coletânea internacional sobre gênero, violência e poder nos esportes de combate (Palgrave Macmillan, 2015).",
+      },
+      {
+        href: "https://seer.ufrgs.br/Movimento/article/view/2925",
+        title: "Marco Antônio Ferretti e Jorge Dorfman Knijnik — Mulheres podem praticar lutas?",
+        detail:
+          "Estudo sobre as representações sociais de lutadoras universitárias (Movimento/UFRGS, 2007).",
+      },
+      {
+        href: "https://www.ucpress.edu/books/masculinities/paper",
+        title: "Raewyn Connell — Masculinities",
+        detail:
+          "Base teórica sobre masculinidade hegemônica, usada em boa parte da pesquisa sobre lutas.",
+      },
+    ],
+  },
+  {
+    title: "Estudos sobre gênero nas lutas",
+    items: [
+      {
+        href: "https://www.scielo.br/j/rbce/a/rnK9PDcXWyTTmKcFKyWywnw/?lang=pt",
+        title: "“Estamos no treino, mas não podemos nos descuidar” — relações de gênero no karatê",
+        detail:
+          "Estudo etnográfico de George A. Lima e colegas (Revista Brasileira de Ciências do Esporte, 2025).",
+      },
+      {
+        href: "https://www.scielo.br/j/mov/a/CpNZB8CKQGt6s7h5RNwTfFK/?lang=pt",
+        title: "Mulheres no boxe: negociações de masculinidade(s) e feminilidade(s) na academia",
+        detail: "Pesquisa etnográfica sobre a prática feminina do boxe (Movimento/UFRGS).",
+      },
+      {
+        href: "https://doi.org/10.20396/conex.v22i00.8677390",
+        title: "Preconceito de gênero nas lutas esportivas",
+        detail:
+          "Entrevistas com praticantes de diferentes modalidades sobre barreiras e trajetórias (Conexões/Unicamp, 2024).",
+      },
+    ],
+  },
+  {
+    title: "Normas e organismos públicos",
+    items: [
+      {
+        href: "https://www.unwomen.org/en/articles/in-focus/women-and-girls-in-sport",
+        title: "ONU Mulheres",
+        detail: "Esporte para a igualdade de gênero",
+      },
+      {
+        href: "https://www.unesco.org/en/sport-and-anti-doping/women-and-sport",
+        title: "UNESCO",
+        detail: "Igualdade de gênero por meio do esporte",
+      },
+      {
+        href: "https://www.olympics.com/ioc/gender-equality",
+        title: "Comitê Olímpico Internacional",
+        detail: "Igualdade, diversidade e inclusão no esporte",
+      },
+      {
+        href: "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14597.htm",
+        title: "Lei Geral do Esporte",
+        detail: "Lei nº 14.597/2023 — direitos, integridade e combate à discriminação",
+      },
+    ],
+  },
+];
+
 function Index() {
+
   const lead = posts[0];
   const rest = posts.slice(1);
 
@@ -163,87 +243,47 @@ function Index() {
                 Fontes e referências
               </h2>
               <p className="mt-4 max-w-md leading-relaxed text-muted-foreground">
-                A apuração parte de estudos, normas e iniciativas públicas sobre gênero, esporte,
+                A apuração parte de estudos acadêmicos sobre gênero nas lutas, de autores
+                especializados em artes marciais e de normas e iniciativas públicas sobre esporte,
                 proteção e participação feminina.
               </p>
             </div>
 
-            <ul className="divide-y divide-border border-y border-border">
-              <li>
-                <a
-                  href="https://www.unwomen.org/en/articles/in-focus/women-and-girls-in-sport"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="group flex items-start justify-between gap-6 py-5"
-                >
-                  <span>
-                    <strong className="block font-semibold">ONU Mulheres</strong>
-                    <span className="mt-1 block text-sm text-muted-foreground">
-                      Esporte para a igualdade de gênero
-                    </span>
-                  </span>
-                  <span aria-hidden="true" className="text-primary transition-transform group-hover:translate-x-1">
-                    ↗
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.unesco.org/en/sport-and-anti-doping/women-and-sport"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="group flex items-start justify-between gap-6 py-5"
-                >
-                  <span>
-                    <strong className="block font-semibold">UNESCO</strong>
-                    <span className="mt-1 block text-sm text-muted-foreground">
-                      Igualdade de gênero por meio do esporte
-                    </span>
-                  </span>
-                  <span aria-hidden="true" className="text-primary transition-transform group-hover:translate-x-1">
-                    ↗
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.olympics.com/ioc/gender-equality"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="group flex items-start justify-between gap-6 py-5"
-                >
-                  <span>
-                    <strong className="block font-semibold">Comitê Olímpico Internacional</strong>
-                    <span className="mt-1 block text-sm text-muted-foreground">
-                      Igualdade, diversidade e inclusão no esporte
-                    </span>
-                  </span>
-                  <span aria-hidden="true" className="text-primary transition-transform group-hover:translate-x-1">
-                    ↗
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14597.htm"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="group flex items-start justify-between gap-6 py-5"
-                >
-                  <span>
-                    <strong className="block font-semibold">Lei Geral do Esporte</strong>
-                    <span className="mt-1 block text-sm text-muted-foreground">
-                      Lei nº 14.597/2023 — direitos, integridade e combate à discriminação
-                    </span>
-                  </span>
-                  <span aria-hidden="true" className="text-primary transition-transform group-hover:translate-x-1">
-                    ↗
-                  </span>
-                </a>
-              </li>
-            </ul>
+            <div className="space-y-10">
+              {referenceGroups.map((group) => (
+                <div key={group.title}>
+                  <h3 className="eyebrow text-primary">{group.title}</h3>
+                  <ul className="mt-4 divide-y divide-border border-y border-border">
+                    {group.items.map((item) => (
+                      <li key={item.href}>
+                        <a
+                          href={item.href}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="group flex items-start justify-between gap-6 py-5"
+                        >
+                          <span>
+                            <strong className="block font-semibold">{item.title}</strong>
+                            <span className="mt-1 block text-sm text-muted-foreground">
+                              {item.detail}
+                            </span>
+                          </span>
+                          <span
+                            aria-hidden="true"
+                            className="text-primary transition-transform group-hover:translate-x-1"
+                          >
+                            ↗
+                          </span>
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
+
 
         <section id="newsletter" className="mx-auto mt-20 max-w-6xl px-6">
           <div className="bg-ink px-6 py-14 text-paper sm:px-14">
