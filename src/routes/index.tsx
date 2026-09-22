@@ -29,20 +29,8 @@ export const Route = createFileRoute("/")({
 
 const referenceGroups = [
   {
-    title: "Autores especializados em artes marciais",
+    title: "Autores brasileiros especializados",
     items: [
-      {
-        href: "https://loicwacquant.org/body-and-soul-notebooks-of-an-apprentice-boxer/",
-        title: "Loïc Wacquant — Body & Soul: Notebooks of an Apprentice Boxer",
-        detail:
-          "Etnografia clássica sobre corpo, masculinidade e aprendizado numa academia de boxe.",
-      },
-      {
-        href: "https://link.springer.com/book/10.1057/9781137439369",
-        title: "Alex Channon e Christopher R. Matthews (orgs.) — Global Perspectives on Women in Combat Sports",
-        detail:
-          "Coletânea internacional sobre gênero, violência e poder nos esportes de combate (Palgrave Macmillan, 2015).",
-      },
       {
         href: "https://seer.ufrgs.br/Movimento/article/view/2925",
         title: "Marco Antônio Ferretti e Jorge Dorfman Knijnik — Mulheres podem praticar lutas?",
@@ -50,26 +38,42 @@ const referenceGroups = [
           "Estudo sobre as representações sociais de lutadoras universitárias (Movimento/UFRGS, 2007).",
       },
       {
-        href: "https://www.ucpress.edu/books/masculinities/paper",
-        title: "Raewyn Connell — Masculinities",
+        href: "https://revistas.ufg.br/fef/article/download/106/101/602",
+        title: "Silvana Vilodre Goellner — Mulher e esporte no Brasil: entre incentivos e interdições",
         detail:
-          "Base teórica sobre masculinidade hegemônica, usada em boa parte da pesquisa sobre lutas.",
+          "Referência nacional em história do esporte e gênero (Pensar a Prática/UFG, 2005).",
+      },
+      {
+        href: "https://periodicos.uepa.br/index.php/cocar/article/view/9088",
+        title: "Angelita Alice Jaeger e Tanise Zeppenfeld Arruda — Mulheres nas lutas e artes marciais",
+        detail:
+          "Revisão de 13 estudos brasileiros sobre gênero e protagonismo feminino nas lutas (Revista Cocar, UEPA).",
+      },
+      {
+        href: "https://revistas.ufg.br/fef/article/view/57482",
+        title: "Angelita Alice Jaeger, Paula Silva e Grasiela Santana — Mulheres atletas e artes marciais mistas",
+        detail: "Revisão sistemática qualitativa sobre lutadoras de MMA (Pensar a Prática/UFG).",
       },
     ],
   },
   {
-    title: "Estudos sobre gênero nas lutas",
+    title: "Estudos brasileiros sobre gênero nas lutas",
     items: [
       {
         href: "https://www.scielo.br/j/rbce/a/rnK9PDcXWyTTmKcFKyWywnw/?lang=pt",
         title: "“Estamos no treino, mas não podemos nos descuidar” — relações de gênero no karatê",
         detail:
-          "Estudo etnográfico de George A. Lima e colegas (Revista Brasileira de Ciências do Esporte, 2025).",
+          "Estudo etnográfico de George A. Lima, Luiz G. B. Rufino, Fabiana C. Turelli e Álvaro Millen Neto (RBCE, 2025).",
       },
       {
         href: "https://www.scielo.br/j/mov/a/CpNZB8CKQGt6s7h5RNwTfFK/?lang=pt",
         title: "Mulheres no boxe: negociações de masculinidade(s) e feminilidade(s) na academia",
         detail: "Pesquisa etnográfica sobre a prática feminina do boxe (Movimento/UFRGS).",
+      },
+      {
+        href: "https://www.scielo.br/j/refuem/a/nBPXjnxwb9FRV7h4BDLjxVR/?lang=pt",
+        title: "Mulheres em combate: representações de feminilidades em lutadoras de boxe e MMA",
+        detail: "Entrevistas com atletas profissionais brasileiras (Revista da Educação Física/UEM).",
       },
       {
         href: "https://doi.org/10.20396/conex.v22i00.8677390",
@@ -79,6 +83,22 @@ const referenceGroups = [
       },
     ],
   },
+  {
+    title: "Complementos internacionais",
+    items: [
+      {
+        href: "https://loicwacquant.org/body-and-soul-notebooks-of-an-apprentice-boxer/",
+        title: "Loïc Wacquant — Body & Soul: Notebooks of an Apprentice Boxer",
+        detail: "Etnografia clássica sobre corpo e masculinidade numa academia de boxe.",
+      },
+      {
+        href: "https://link.springer.com/book/10.1057/9781137439369",
+        title: "Alex Channon e Christopher R. Matthews (orgs.) — Global Perspectives on Women in Combat Sports",
+        detail: "Coletânea sobre gênero e poder nos esportes de combate (Palgrave, 2015).",
+      },
+    ],
+  },
+
   {
     title: "Normas e organismos públicos",
     items: [
