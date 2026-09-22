@@ -163,87 +163,47 @@ function Index() {
                 Fontes e referências
               </h2>
               <p className="mt-4 max-w-md leading-relaxed text-muted-foreground">
-                A apuração parte de estudos, normas e iniciativas públicas sobre gênero, esporte,
+                A apuração parte de estudos acadêmicos sobre gênero nas lutas, de autores
+                especializados em artes marciais e de normas e iniciativas públicas sobre esporte,
                 proteção e participação feminina.
               </p>
             </div>
 
-            <ul className="divide-y divide-border border-y border-border">
-              <li>
-                <a
-                  href="https://www.unwomen.org/en/articles/in-focus/women-and-girls-in-sport"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="group flex items-start justify-between gap-6 py-5"
-                >
-                  <span>
-                    <strong className="block font-semibold">ONU Mulheres</strong>
-                    <span className="mt-1 block text-sm text-muted-foreground">
-                      Esporte para a igualdade de gênero
-                    </span>
-                  </span>
-                  <span aria-hidden="true" className="text-primary transition-transform group-hover:translate-x-1">
-                    ↗
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.unesco.org/en/sport-and-anti-doping/women-and-sport"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="group flex items-start justify-between gap-6 py-5"
-                >
-                  <span>
-                    <strong className="block font-semibold">UNESCO</strong>
-                    <span className="mt-1 block text-sm text-muted-foreground">
-                      Igualdade de gênero por meio do esporte
-                    </span>
-                  </span>
-                  <span aria-hidden="true" className="text-primary transition-transform group-hover:translate-x-1">
-                    ↗
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.olympics.com/ioc/gender-equality"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="group flex items-start justify-between gap-6 py-5"
-                >
-                  <span>
-                    <strong className="block font-semibold">Comitê Olímpico Internacional</strong>
-                    <span className="mt-1 block text-sm text-muted-foreground">
-                      Igualdade, diversidade e inclusão no esporte
-                    </span>
-                  </span>
-                  <span aria-hidden="true" className="text-primary transition-transform group-hover:translate-x-1">
-                    ↗
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14597.htm"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="group flex items-start justify-between gap-6 py-5"
-                >
-                  <span>
-                    <strong className="block font-semibold">Lei Geral do Esporte</strong>
-                    <span className="mt-1 block text-sm text-muted-foreground">
-                      Lei nº 14.597/2023 — direitos, integridade e combate à discriminação
-                    </span>
-                  </span>
-                  <span aria-hidden="true" className="text-primary transition-transform group-hover:translate-x-1">
-                    ↗
-                  </span>
-                </a>
-              </li>
-            </ul>
+            <div className="space-y-10">
+              {referenceGroups.map((group) => (
+                <div key={group.title}>
+                  <h3 className="eyebrow text-primary">{group.title}</h3>
+                  <ul className="mt-4 divide-y divide-border border-y border-border">
+                    {group.items.map((item) => (
+                      <li key={item.href}>
+                        <a
+                          href={item.href}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="group flex items-start justify-between gap-6 py-5"
+                        >
+                          <span>
+                            <strong className="block font-semibold">{item.title}</strong>
+                            <span className="mt-1 block text-sm text-muted-foreground">
+                              {item.detail}
+                            </span>
+                          </span>
+                          <span
+                            aria-hidden="true"
+                            className="text-primary transition-transform group-hover:translate-x-1"
+                          >
+                            ↗
+                          </span>
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
+
 
         <section id="newsletter" className="mx-auto mt-20 max-w-6xl px-6">
           <div className="bg-ink px-6 py-14 text-paper sm:px-14">
