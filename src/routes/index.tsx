@@ -57,7 +57,7 @@ const referenceGroups = [
     ],
   },
   {
-    title: "Estudos brasileiros sobre gênero nas lutas",
+    title: "Estudos sobre gênero nas lutas",
     items: [
       {
         href: "https://www.scielo.br/j/rbce/a/rnK9PDcXWyTTmKcFKyWywnw/?lang=pt",
@@ -80,21 +80,6 @@ const referenceGroups = [
         title: "Preconceito de gênero nas lutas esportivas",
         detail:
           "Entrevistas com praticantes de diferentes modalidades sobre barreiras e trajetórias (Conexões/Unicamp, 2024).",
-      },
-    ],
-  },
-  {
-    title: "Complementos internacionais",
-    items: [
-      {
-        href: "https://loicwacquant.org/body-and-soul-notebooks-of-an-apprentice-boxer/",
-        title: "Loïc Wacquant — Body & Soul: Notebooks of an Apprentice Boxer",
-        detail: "Etnografia clássica sobre corpo e masculinidade numa academia de boxe.",
-      },
-      {
-        href: "https://link.springer.com/book/10.1057/9781137439369",
-        title: "Alex Channon e Christopher R. Matthews (orgs.) — Global Perspectives on Women in Combat Sports",
-        detail: "Coletânea sobre gênero e poder nos esportes de combate (Palgrave, 2015).",
       },
     ],
   },
