@@ -36,23 +36,31 @@ const referenceGroups = [
         title: "Marco Antônio Ferretti e Jorge Dorfman Knijnik — Mulheres podem praticar lutas?",
         detail:
           "Estudo sobre as representações sociais de lutadoras universitárias (Movimento/UFRGS, 2007).",
+        excerpt:
+          "A pesquisa mostra que o preconceito nas lutas pode levar mulheres a evitarem até mesmo a identificação como lutadoras, como forma de proteção contra o estigma.",
       },
       {
         href: "https://revistas.ufg.br/fef/article/download/106/101/602",
         title: "Silvana Vilodre Goellner — Mulher e esporte no Brasil: entre incentivos e interdições",
         detail:
           "Referência nacional em história do esporte e gênero (Pensar a Prática/UFG, 2005).",
+        excerpt:
+          "A autora aponta que, apesar do aumento da participação feminina, persistem desigualdades de acesso, apoio, visibilidade e premiação no esporte.",
       },
       {
         href: "https://periodicos.uepa.br/index.php/cocar/article/view/9088",
         title: "Angelita Alice Jaeger e Tanise Zeppenfeld Arruda — Mulheres nas lutas e artes marciais",
         detail:
           "Revisão de 13 estudos brasileiros sobre gênero e protagonismo feminino nas lutas (Revista Cocar, UEPA).",
+        excerpt:
+          "A revisão identifica a ampliação da presença feminina nas artes marciais, mas também barreiras sociais e culturais que limitam reconhecimento e permanência.",
       },
       {
         href: "https://revistas.ufg.br/fef/article/view/57482",
         title: "Angelita Alice Jaeger, Paula Silva e Grasiela Santana — Mulheres atletas e artes marciais mistas",
         detail: "Revisão sistemática qualitativa sobre lutadoras de MMA (Pensar a Prática/UFG).",
+        excerpt:
+          "O estudo destaca como lutadoras de MMA rompem estereótipos e constroem uma visibilidade que não se limita à exposição de seus corpos.",
       },
     ],
   },
@@ -64,22 +72,30 @@ const referenceGroups = [
         title: "“Estamos no treino, mas não podemos nos descuidar” — relações de gênero no karatê",
         detail:
           "Estudo etnográfico de George A. Lima, Luiz G. B. Rufino, Fabiana C. Turelli e Álvaro Millen Neto (RBCE, 2025).",
+        excerpt:
+          "A etnografia revela que mulheres podem ser conduzidas a papéis secundários e a comportamentos considerados aceitáveis em um ambiente marcado pela masculinidade.",
       },
       {
         href: "https://www.scielo.br/j/mov/a/CpNZB8CKQGt6s7h5RNwTfFK/?lang=pt",
         title: "Mulheres no boxe: negociações de masculinidade(s) e feminilidade(s) na academia",
         detail: "Pesquisa etnográfica sobre a prática feminina do boxe (Movimento/UFRGS).",
+        excerpt:
+          "A pesquisa mostra como ideias tradicionais de masculinidade e feminilidade influenciam os treinos e o tratamento dado às atletas.",
       },
       {
         href: "https://www.scielo.br/j/refuem/a/nBPXjnxwb9FRV7h4BDLjxVR/?lang=pt",
         title: "Mulheres em combate: representações de feminilidades em lutadoras de boxe e MMA",
         detail: "Entrevistas com atletas profissionais brasileiras (Revista da Educação Física/UEM).",
+        excerpt:
+          "Os relatos evidenciam que as lutadoras constroem e reivindicam formas próprias e diversas de feminilidade dentro do boxe e do MMA.",
       },
       {
         href: "https://doi.org/10.20396/conex.v22i00.8677390",
         title: "Preconceito de gênero nas lutas esportivas",
         detail:
           "Entrevistas com praticantes de diferentes modalidades sobre barreiras e trajetórias (Conexões/Unicamp, 2024).",
+        excerpt:
+          "As trajetórias analisadas mostram que práticas culturais ainda prejudicam o reconhecimento das mulheres e exigem mudanças coletivas para ambientes mais inclusivos.",
       },
     ],
   },
@@ -91,21 +107,29 @@ const referenceGroups = [
         href: "https://www.unwomen.org/en/articles/in-focus/women-and-girls-in-sport",
         title: "ONU Mulheres",
         detail: "Esporte para a igualdade de gênero",
+        excerpt:
+          "A organização apresenta o esporte como espaço capaz de transformar vidas e desafiar estereótipos, defendendo igualdade, liderança, visibilidade e segurança.",
       },
       {
         href: "https://www.unesco.org/en/sport-and-anti-doping/women-and-sport",
         title: "UNESCO",
         detail: "Igualdade de gênero por meio do esporte",
+        excerpt:
+          "A instituição defende o esporte como instrumento de participação, igualdade e fortalecimento de mulheres e meninas.",
       },
       {
         href: "https://www.olympics.com/ioc/gender-equality",
         title: "Comitê Olímpico Internacional",
         detail: "Igualdade, diversidade e inclusão no esporte",
+        excerpt:
+          "O organismo estabelece como prioridade reduzir as desigualdades de gênero dentro e fora das competições esportivas.",
       },
       {
         href: "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14597.htm",
         title: "Lei Geral do Esporte",
         detail: "Lei nº 14.597/2023 — direitos, integridade e combate à discriminação",
+        excerpt:
+          "A legislação determina medidas para combater manifestações antiesportivas, incluindo o sexismo e outras formas de discriminação.",
       },
     ],
   },
@@ -271,6 +295,10 @@ function Index() {
                             <strong className="block font-semibold">{item.title}</strong>
                             <span className="mt-1 block text-sm text-muted-foreground">
                               {item.detail}
+                            </span>
+                            <span className="mt-3 block border-l-2 border-primary pl-4 text-sm leading-relaxed">
+                              <span className="font-semibold">Trecho temático:</span>{" "}
+                              {item.excerpt}
                             </span>
                           </span>
                           <span
