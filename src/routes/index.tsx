@@ -57,7 +57,7 @@ const referenceGroups = [
     ],
   },
   {
-    title: "Estudos brasileiros sobre gênero nas lutas",
+    title: "Estudos sobre gênero nas lutas",
     items: [
       {
         href: "https://www.scielo.br/j/rbce/a/rnK9PDcXWyTTmKcFKyWywnw/?lang=pt",
