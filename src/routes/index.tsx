@@ -297,7 +297,7 @@ function Index() {
                               {item.detail}
                             </span>
                             <span className="mt-3 block border-l-2 border-primary pl-4 text-sm leading-relaxed">
-                              <span className="font-semibold">Trecho temático:</span>{" "}
+                              <span className="font-semibold">Texto de referência:</span>{" "}
                               {item.excerpt}
                             </span>
                           </span>
