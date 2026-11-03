@@ -1,6 +1,7 @@
 export type Interview = {
   subject: string;
   role: string;
+  bio?: string;
   intro: string;
   qa: { q: string; a: string }[];
   note?: string;
@@ -39,8 +40,9 @@ export const posts: Post[] = [
       "O centro não precisa ter dono. Quando o acesso ao treino intenso, à atenção do professor e às posições de liderança segue critérios claros, a hierarquia deixa de reproduzir gênero e volta a cumprir sua função: organizar o aprendizado.",
     ],
     interview: {
-      subject: "Entrevista com o professor Luciano",
-      role: "G13 BJJ — sobre inclusão e respeito nas artes marciais",
+      subject: "Entrevista com o professor Luciano Assis",
+      role: "Professor de Jiu-Jitsu — faixa preta 6 graus",
+      bio: "48 anos · cerca de 20 anos de prática · professor em uma escola de artes marciais na região do Grajaú (G13 BJJ)",
       intro:
         "O professor compartilha sua visão sobre o papel das academias no combate ao preconceito e sobre como acolher quem deseja começar a treinar.",
       qa: [
@@ -80,8 +82,9 @@ export const posts: Post[] = [
       "Transparência não transforma faixa em prêmio automático. Ela protege a exigência técnica de preferências pessoais e permite que cada praticante construa um caminho possível até a próxima graduação.",
     ],
     interview: {
-      subject: "Entrevista com o professor André",
-      role: "Professor de jiu-jitsu — sobre ensino e incentivo às mulheres",
+      subject: "Entrevista com o professor André Alarcon",
+      role: "Instrutor de Jiu-Jitsu — faixa preta 3 graus",
+      bio: "46 anos · cerca de 17 anos de prática · proprietário e professor de uma escola de artes marciais na região do Grajaú",
       intro:
         "O professor conta como conduz as aulas sem distinção de gênero e explica como sua academia incentiva as mulheres a seguir até a faixa preta.",
       qa: [
@@ -120,22 +123,23 @@ export const posts: Post[] = [
       "Academias podem revisar contratos e materiais de divulgação, registrar quem criou cada programa e estabelecer o mesmo caminho de promoção para toda a equipe. Dar crédito não é gentileza: é tornar visível quem já sustenta o trabalho cotidiano.",
     ],
     interview: {
-      subject: "Entrevista com Marta Nogueira",
-      role: "Professora de judô — sobre reconhecimento e crédito no trabalho feminino",
+      subject: "Entrevista com o professor Leandro Chuler",
+      role: "Professor de Jiu-Jitsu — faixa marrom",
+      bio: "38 anos · cerca de 8 anos de prática · instrutor em uma escola de artes marciais na região do Grajaú",
       intro:
-        "A professora conta como é sustentar treinos e equipes sem que seu nome apareça no lugar que o trabalho ocuparia.",
+        "O instrutor fala sobre como o trabalho das professoras é visto dentro das academias e sobre o que precisa mudar para que ele seja reconhecido.",
       qa: [
         {
-          q: "Na sua trajetória, você já sentiu que seu trabalho foi tratado como auxiliar, mesmo quando você assumia funções de professora?",
-          a: "Sim. Durante anos montei o plano de treino, acompanhei os atletas em competição e resolvi os problemas do dia a dia. Quando saía resultado, o nome que aparecia era o do meu colega. O meu trabalho era tratado como ajuda, o dele como comando — exatamente a mesma função, com pesos diferentes.",
+          q: "Na sua experiência como instrutor, você já percebeu o trabalho de professoras sendo tratado como auxiliar, mesmo quando elas assumiam funções de professora?",
+          a: "Já percebi, sim. Em algumas academias por onde passei, as professoras montavam o treino, cuidavam das turmas e acompanhavam os atletas, mas o nome que aparecia como responsável era sempre o de um professor homem. É uma injustiça que acontece no silêncio, e muita gente nem percebe.",
         },
         {
           q: "O que mudaria concretamente a rotina das professoras nas academias?",
-          a: "Três coisas simples: contrato com cargo e salário corretos, crédito registrado em quem criou cada programa e participação nas decisões — calendário, graduação, orçamento. Não é privilégio, é descrever o trabalho que já existe.",
+          a: "Reconhecimento formal: cargo, salário e crédito pelo trabalho que já fazem. Também acho fundamental que elas participem das decisões da academia — graduação, calendário, planejamento. Quem sustenta o treino no dia a dia precisa ter voz na hora de decidir.",
         },
         {
-          q: "Qual conselho você daria para uma mulher que quer se tornar professora?",
-          a: "Registre o seu trabalho. Guarde os planos de treino que você criou, os resultados das suas equipes, as turmas que você conduziu. Quando chegar a hora de negociar cargo e salário, o histórico escrito é o que impede que a sua competência seja tratada como favo.",
+          q: "Qual conselho você daria para uma mulher que quer se tornar professora de artes marciais?",
+          a: "Que não aceite ocupar um lugar menor do que o trabalho que entrega. Estude, gradue, registre o que constrói e cobre o reconhecimento. O jiu-jitsu me ensinou que posição se conquista com constância — e o lugar delas no comando das academias também.",
         },
       ],
       note: "Entrevista fictícia, criada para ilustrar o debate.",

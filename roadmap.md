@@ -8,3 +8,4 @@
 - [x] Criar novas entrevistas ficcionais nos mesmos modelos para os três artigos sem entrevista.
 - [x] Explicitar objetivo, justificativa, metodologia e resultados esperados na página inicial.
 - [x] Adicionar uma seção de fontes e referências na página inicial.
+- [x] Substituir entrevistas pelos três professores reais (Luciano Assis, André Alarcon, Leandro Chuler) e completar o repertório dos artigos sem entrevista real.

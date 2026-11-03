@@ -56,6 +56,9 @@ function PostPage() {
               {post.interview.subject}
             </h2>
             <p className="mt-1 text-sm text-muted-foreground">{post.interview.role}</p>
+            {post.interview.bio && (
+              <p className="mt-1 text-sm text-muted-foreground">{post.interview.bio}</p>
+            )}
             <p className="mt-5 text-lg leading-relaxed text-foreground/85">
               {post.interview.intro}
             </p>
