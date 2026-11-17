@@ -187,6 +187,7 @@ export const posts: Post[] = [
       subject: "Entrevista com Fernanda Lousada",
       role: "Responsável por uma academia de karatê — sobre colocar protocolos em prática",
       martialArt: "Karatê",
+      belt: "Faixa preta 3º dan",
       intro:
         "A responsável pela academia explica quais medidas do guia implementou primeiro e o que aprendeu ao aplicá-las.",
       qa: [
