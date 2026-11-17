@@ -1,7 +1,7 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
-import { getPost, posts } from "@/lib/posts";
+import { getPost, posts, type Interview } from "@/lib/posts";
 
 export const Route = createFileRoute("/posts/$slug")({
   loader: ({ params }) => {
@@ -56,9 +56,7 @@ function PostPage() {
               {post.interview.subject}
             </h2>
             <p className="mt-1 text-sm text-muted-foreground">{post.interview.role}</p>
-            {post.interview.bio && (
-              <p className="mt-1 text-sm text-muted-foreground">{post.interview.bio}</p>
-            )}
+            <InterviewFicha interview={post.interview} />
             <p className="mt-5 text-lg leading-relaxed text-foreground/85">
               {post.interview.intro}
             </p>
@@ -100,5 +98,33 @@ function PostPage() {
       </main>
       <SiteFooter />
     </div>
+  );
+}
+
+function InterviewFicha({ interview }: { interview: Interview }) {
+  const fields = [
+    { label: "Arte marcial", value: interview.martialArt },
+    { label: "Faixa", value: interview.belt },
+    { label: "Tempo de prática", value: interview.practiceTime },
+    { label: "Tempo de função", value: interview.teachingTime },
+    { label: "Idade", value: interview.age },
+    { label: "Onde atua", value: interview.affiliation },
+  ].filter((field): field is { label: string; value: string } => Boolean(field.value));
+
+  if (fields.length === 0) return null;
+
+  return (
+    <dl className="mt-4 grid grid-cols-2 gap-x-6 gap-y-4 rounded-lg border border-border bg-muted/40 p-5 sm:grid-cols-3">
+      {fields.map((field) => (
+        <div key={field.label}>
+          <dt className="text-[11px] uppercase tracking-[0.16em] text-muted-foreground">
+            {field.label}
+          </dt>
+          <dd className="mt-1 text-sm font-medium leading-snug text-foreground">
+            {field.value}
+          </dd>
+        </div>
+      ))}
+    </dl>
   );
 }

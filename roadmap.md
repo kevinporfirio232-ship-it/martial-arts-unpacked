@@ -9,3 +9,4 @@
 - [x] Explicitar objetivo, justificativa, metodologia e resultados esperados na página inicial.
 - [x] Adicionar uma seção de fontes e referências na página inicial.
 - [x] Substituir entrevistas pelos três professores reais (Luciano Assis, André Alarcon, Leandro Chuler) e completar o repertório dos artigos sem entrevista real.
+- [x] Exibir na ficha de cada professor a arte marcial, a faixa, o tempo de prática, a idade e onde atua.

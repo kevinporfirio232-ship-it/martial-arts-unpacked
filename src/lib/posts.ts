@@ -1,7 +1,12 @@
 export type Interview = {
   subject: string;
   role: string;
-  bio?: string;
+  martialArt?: string;
+  belt?: string;
+  practiceTime?: string;
+  teachingTime?: string;
+  age?: string;
+  affiliation?: string;
   intro: string;
   qa: { q: string; a: string }[];
   note?: string;
@@ -41,8 +46,12 @@ export const posts: Post[] = [
     ],
     interview: {
       subject: "Entrevista com o professor Luciano Assis",
-      role: "Professor de Jiu-Jitsu — faixa preta 6 graus",
-      bio: "48 anos · cerca de 20 anos de prática · professor em uma escola de artes marciais na região do Grajaú (G13 BJJ)",
+      role: "Professor de Jiu-Jitsu",
+      martialArt: "Jiu-Jitsu",
+      belt: "Faixa preta 6 graus",
+      practiceTime: "Cerca de 20 anos",
+      age: "48 anos",
+      affiliation: "Professor em uma escola de artes marciais na região do Grajaú (G13 BJJ)",
       intro:
         "O professor compartilha sua visão sobre o papel das academias no combate ao preconceito e sobre como acolher quem deseja começar a treinar.",
       qa: [
@@ -83,8 +92,12 @@ export const posts: Post[] = [
     ],
     interview: {
       subject: "Entrevista com o professor André Alarcon",
-      role: "Instrutor de Jiu-Jitsu — faixa preta 3 graus",
-      bio: "46 anos · cerca de 17 anos de prática · proprietário e professor de uma escola de artes marciais na região do Grajaú",
+      role: "Instrutor de Jiu-Jitsu",
+      martialArt: "Jiu-Jitsu",
+      belt: "Faixa preta 3 graus",
+      practiceTime: "Cerca de 17 anos",
+      age: "46 anos",
+      affiliation: "Proprietário e professor de uma escola de artes marciais na região do Grajaú",
       intro:
         "O professor conta como conduz as aulas sem distinção de gênero e explica como sua academia incentiva as mulheres a seguir até a faixa preta.",
       qa: [
@@ -124,8 +137,12 @@ export const posts: Post[] = [
     ],
     interview: {
       subject: "Entrevista com o professor Leandro Chuler",
-      role: "Professor de Jiu-Jitsu — faixa marrom",
-      bio: "38 anos · cerca de 8 anos de prática · instrutor em uma escola de artes marciais na região do Grajaú",
+      role: "Professor de Jiu-Jitsu",
+      martialArt: "Jiu-Jitsu",
+      belt: "Faixa marrom",
+      practiceTime: "Cerca de 8 anos",
+      age: "38 anos",
+      affiliation: "Instrutor em uma escola de artes marciais na região do Grajaú",
       intro:
         "O instrutor fala sobre como o trabalho das professoras é visto dentro das academias e sobre o que precisa mudar para que ele seja reconhecido.",
       qa: [
@@ -169,6 +186,7 @@ export const posts: Post[] = [
     interview: {
       subject: "Entrevista com Fernanda Lousada",
       role: "Responsável por uma academia de karatê — sobre colocar protocolos em prática",
+      martialArt: "Karatê",
       intro:
         "A responsável pela academia explica quais medidas do guia implementou primeiro e o que aprendeu ao aplicá-las.",
       qa: [
@@ -210,6 +228,7 @@ export const posts: Post[] = [
     interview: {
       subject: "Entrevista com Camila Duarte",
       role: "Atleta de boxe — sobre o vocabulário que atravessa o treino",
+      martialArt: "Boxe",
       intro:
         "A atleta conta quais frases ouviu ao longo dos anos, como elas mudaram sua forma de treinar e o que um professor pode fazer no momento em que a frase é dita.",
       qa: [
