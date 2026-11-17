@@ -51,6 +51,7 @@ export const posts: Post[] = [
       martialArt: "Jiu-Jitsu",
       belt: "Faixa preta 6 graus",
       practiceTime: "Cerca de 20 anos",
+      teachingTime: "Cerca de 20 anos",
       age: "48 anos",
       affiliation: "Professor em uma escola de artes marciais na região do Grajaú (G13 BJJ)",
       intro:
@@ -97,6 +98,7 @@ export const posts: Post[] = [
       martialArt: "Jiu-Jitsu",
       belt: "Faixa preta 3 graus",
       practiceTime: "Cerca de 17 anos",
+      teachingTime: "Cerca de 17 anos",
       age: "46 anos",
       affiliation: "Proprietário e professor de uma escola de artes marciais na região do Grajaú",
       intro:
@@ -142,6 +144,7 @@ export const posts: Post[] = [
       martialArt: "Jiu-Jitsu",
       belt: "Faixa marrom 0 graus",
       practiceTime: "Cerca de 8 anos",
+      teachingTime: "Cerca de 8 anos",
       age: "38 anos",
       affiliation: "Instrutor em uma escola de artes marciais na região do Grajaú",
       intro:
