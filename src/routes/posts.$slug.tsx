@@ -104,7 +104,7 @@ function PostPage() {
 function InterviewFicha({ interview }: { interview: Interview }) {
   const fields = [
     { label: "Arte marcial", value: interview.martialArt },
-    { label: "Faixa", value: interview.belt },
+    { label: interview.beltLabel ?? "Faixa", value: interview.belt },
     { label: "Tempo de prática", value: interview.practiceTime },
     { label: "Tempo de função", value: interview.teachingTime },
     { label: "Idade", value: interview.age },

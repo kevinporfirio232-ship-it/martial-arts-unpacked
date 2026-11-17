@@ -3,6 +3,7 @@ export type Interview = {
   role: string;
   martialArt?: string;
   belt?: string;
+  beltLabel?: string;
   practiceTime?: string;
   teachingTime?: string;
   age?: string;
@@ -139,7 +140,7 @@ export const posts: Post[] = [
       subject: "Entrevista com o professor Leandro Chuler",
       role: "Professor de Jiu-Jitsu",
       martialArt: "Jiu-Jitsu",
-      belt: "Faixa marrom",
+      belt: "Faixa marrom 0 graus",
       practiceTime: "Cerca de 8 anos",
       age: "38 anos",
       affiliation: "Instrutor em uma escola de artes marciais na região do Grajaú",
@@ -159,7 +160,7 @@ export const posts: Post[] = [
           a: "Que não aceite ocupar um lugar menor do que o trabalho que entrega. Estude, gradue, registre o que constrói e cobre o reconhecimento. O jiu-jitsu me ensinou que posição se conquista com constância — e o lugar delas no comando das academias também.",
         },
       ],
-      note: "Entrevista fictícia, criada para ilustrar o debate.",
+      note: "Entrevista enviada especialmente para esta publicação.",
     },
   },
   {
@@ -230,6 +231,8 @@ export const posts: Post[] = [
       subject: "Entrevista com Camila Duarte",
       role: "Atleta de boxe — sobre o vocabulário que atravessa o treino",
       martialArt: "Boxe",
+      beltLabel: "Graduação",
+      belt: "Sem graduação por faixas — no boxe a trajetória se mede por lutas e categoria",
       intro:
         "A atleta conta quais frases ouviu ao longo dos anos, como elas mudaram sua forma de treinar e o que um professor pode fazer no momento em que a frase é dita.",
       qa: [
